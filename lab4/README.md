@@ -73,8 +73,8 @@ sudo perf script > out.perf
 
 
 **Аналіз `/usr/bin/time -v`:**
-* `User time (seconds): 6.39`: Час CPU, витрачений у коді програми.
-* `Elapsed (wall clock) time ...: 0:06.42`: Реальний час виконання. Той факт, що "User time" (6.39 с) та "Elapsed time" (6.42 с) майже ідентичні, підтверджує, що програма повністю завантажила одне ядро CPU (`Percent of CPU: 99%`).
+* `User time (seconds): 6.43`: Час CPU, витрачений у коді програми.
+* `Elapsed (wall clock) time ...: 0:06.44`: Реальний час виконання. Той факт, що "User time" (6.43 с) та "Elapsed time" (6.44 с) майже ідентичні, підтверджує, що програма повністю завантажила одне ядро CPU (`Percent of CPU: 99%`).
 * `Maximum resident set size (kbytes): 16512`: Пікове використання RAM склало приблизно 16.5 МБ.
 * `Major (requiring I/O) page faults: 0`: Ідеальний показник. Програма жодного разу не зверталася до повільного диска; все помістилося в RAM.
 
